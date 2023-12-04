@@ -18,6 +18,8 @@
 
         //boolean
         $fumante_sn = true;//(true = 1, false = 0)
+
+        
      
      ?>
 
