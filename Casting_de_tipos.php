@@ -9,23 +9,23 @@
     <?php
     //Fazendo Casting------------------------------------
       //gettype() => retorna o tipo da variável
-      //$valor = 10.55;
-      //$valor2 = (double) $valor;
+      //$valor = 10.55;  #-------------------
+      //$valor2 = (double) $valor;   #casting
       //$valor2 = (string) $valor;
       //$valor2 = (int) $valor;
 
 
-      //$valor = '22.12';
-      //$valor = 'abc';
-      //$valor = ''; retorna false
+      //$valor = '22.12'; #------------
+      //$valor = 'abc';   #-----------
+      //$valor = ''; retorna false  #-----
 
-      //$valor2 = (integer) $valor;
+      //$valor2 = (integer) $valor;  #casting
       //$valor2 = (string) $valor;
       //$valor2 = (bool) $valor;
 
 
       $valor = true;
-      //$valor = false;
+      //$valor = false;  #--------------
 
       $valor2 = (string) $valor;
       $valor3 = (int) $valor2;
