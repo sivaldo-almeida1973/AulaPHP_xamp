@@ -19,7 +19,7 @@
 
      //valores null
      if(is_null($funcionario1)) {
-       echo 'sim , a variavel é nulll'; 
+       echo 'sim , a variavel é null'; 
       } else {
         echo 'Não , a variavel não é null';
       }
@@ -27,7 +27,7 @@
       echo'<br>';
 
       if(is_null($funcionario2)) {
-        echo 'sim , a variavel é nulll'; 
+        echo 'sim , a variavel é null'; 
        } else {
          echo 'Não , a variavel não é null';
        }
@@ -35,7 +35,7 @@
        echo'<br>';
 
        if(is_null($funcionario3)) {
-        echo 'sim , a variavel é nulll'; 
+        echo 'sim , a variavel é null'; 
        } else {
          echo 'Não , a variavel não é null';
        }
