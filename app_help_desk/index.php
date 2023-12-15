@@ -39,6 +39,23 @@
                 <div class="form-group">
                   <input name="senha" type="password" class="form-control" placeholder="Senha">
                 </div>
+
+                <?php 
+                    //mensagem de erro caso a autenticação  de seja invalida====================================================
+                  if(isset( $_GET["login"]) && $_GET["login"] == "erro") {
+                            
+                ?>
+
+                <div class="text-danger">
+
+                Usuários ou senhas inválido(s)
+
+                </div>
+               
+                <?php } 
+                 //mensagem de erro====================================================
+                ?> 
+
                 <button class="btn btn-lg btn-info btn-block" type="submit">Entrar</button>
               </form>
             </div>
