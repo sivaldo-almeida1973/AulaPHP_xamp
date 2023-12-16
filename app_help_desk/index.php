@@ -42,19 +42,27 @@
 
                 <?php 
                     //mensagem de erro caso a autenticação  de seja invalida====================================================
-                  if(isset( $_GET["login"]) && $_GET["login"] == "erro") {
-                            
-                ?>
+                 if(isset( $_GET["login"]) && $_GET["login"] == "erro") { ?>
 
                 <div class="text-danger">
 
-                Usuários ou senhas inválido(s)
+                Usuário ou senha inválido(s)!
 
                 </div>
                
-                <?php } 
-                 //mensagem de erro====================================================
-                ?> 
+                <?php }  ?> 
+
+                <?php 
+                    //mensagem de erro caso a autenticação  de seja invalida====================================================
+                 if(isset( $_GET["login"]) && $_GET["login"] == "erro2") { ?>
+
+                <div class="text-danger">
+
+                Faça login antes de acessar as paginas protegidas!
+
+                </div>
+               
+                <?php }  ?> 
 
                 <button class="btn btn-lg btn-info btn-block" type="submit">Entrar</button>
               </form>
