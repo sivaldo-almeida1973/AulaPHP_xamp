@@ -1,5 +1,10 @@
-<?php require_once"validador_acesso.php" ?>;
+<? 
+  require_once"validador_acesso.php";
 
+  //session_start(); //iniciar sessão
+
+ 
+?>;
 
 <html>
   <head>

@@ -1,8 +1,7 @@
 <?php 
 
-   echo "<pre>";
-   print_r($_POST);
-   echo "</pre>";
+   session_start();
+
 
    //trabalhando na montagem do texto
    $titulo = str_replace("#","-", $_POST["titulo"]);
@@ -17,7 +16,7 @@
    //implode('#', $_POST);
    //definir o que vai ser escrito no arquivo
    //  PHP_EOL , faz pular linhas no arquivo a cada chamado
-   $texto = $titulo .'#' . $categoria . '#' . $descricao . PHP_EOL;
+   $texto = $_SESSION['id'] .'#'. $titulo .'#' . $categoria . '#' . $descricao . PHP_EOL;
 
     //escrevendo em um arquivo
    fwrite($arquivo, $texto);
