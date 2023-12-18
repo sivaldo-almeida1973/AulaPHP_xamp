@@ -9,7 +9,7 @@
 
    //abrir arquivo.txt
    // $arquivo = fopen("arquivo.txt","r");
-   $arquivo = fopen('arquivo.txt', 'r');
+   $arquivo = fopen('../../../app_help_desk/arquivo.txt', 'r');
    
     //precorrer o arquivo.txt enquanto houver registros(linhas) a recuprerar
 
