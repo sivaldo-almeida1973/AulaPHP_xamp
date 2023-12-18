@@ -20,10 +20,6 @@
 
     }
 
-
-      
-
-
     /*
     function setNome($nome) {
       $this->nome = $nome;
@@ -76,7 +72,7 @@
 
 
   //echo $y->resumirCadFunc();
-  echo 'Nome:'. $y->__get('nome') . ', Filhos :' . $y->__get('numFilhos') .' filho, telefone contato: '. $y->__get('telefone') . ', Cargo:'.$y->__get('cargo') .', Salario R$:'. $y->__get('salario');
+  echo 'Nome:'. $y->__get('nome') . ', Filhos :' . $y->__get('numFilhos') .' filho, telefone contato: '. $y->__get('telefone') . ', Cargo:'.$y->__get('cargo') .', Salario:'. $y->__get('salario');
   
   echo "<br>";
 
