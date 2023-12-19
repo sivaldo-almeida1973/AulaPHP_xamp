@@ -62,7 +62,6 @@
 
   }
 
-
   $y = new Funcionario(); 
   $y->__set('nome', 'sivaldo');
   $y->__set('telefone', '88888888888');
@@ -70,14 +69,11 @@
   $y->__set('cargo', 'eng software');
   $y->__set('salario', 10000);
 
-
   echo $y->resumirCadFunc();
  // echo 'Nome:'. $y->__get('nome') . ', Filhos :' . $y->__get('numFilhos') .' filho, telefone contato: '. $y->__get('telefone') . ', Cargo:'.$y->__get('cargo') .', Salario:'. $y->__get('salario');
   
   echo "<br>";
 
-
-  
   $x = new Funcionario(); 
   $x->__set('nome','lucas');
   $x->__set('telefone','888888-888888');
