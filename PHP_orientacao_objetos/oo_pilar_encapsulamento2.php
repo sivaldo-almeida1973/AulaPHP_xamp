@@ -4,8 +4,9 @@
       private $nome = 'Sivaldo';
       protected $sobrenome = 'vieira';
       public $humor = 'feliz';
+     
+      // //metodos magicos(recupera valor contido atributos private e protected)
 
-      //metodos magicos(recupera valor contido atributos private e protected)
       public function __get($attr) {
         return $this->$attr;
       }
@@ -13,6 +14,7 @@
       public function __set($attr, $value) {
         $this->$attr = $value;
       }
+
       //metodos------------------------------------------
       private function executarMania() {
         echo 'Assobiar';
@@ -34,23 +36,41 @@
       }   
     }
 
-    $pai = new Pai();
-    // //echo $pai->humor;
-    // echo $pai->nome;
-    // echo '<br>';
-    // echo $pai->sobrenome;
-    // echo '<br>';
-    // $pai->sobrenome = 'almeida';
-    // echo '<br>';
-    // echo $pai->sobrenome;
+  
+    class Filho extends Pai {
 
-    //chamando metodos
-    echo $pai->executarAcao();
+      public function __construct() {
+        //exibir os metodos do objeto
+          echo "<pre>";
+          print_r(get_class_methods($this));
+          echo "<pre>";
+      
+      }
+
+      private function executarMania() {
+        echo 'Cantar';
+      }
+
+      public function x() {
+        $this->executarMania();
+      }
+      
+    }
+
+    // $pai = new Pai();
+    // //chamando metodos
+    // echo $pai->executarAcao();
+
+    $filho = new Filho();
+    echo '<pre>';
+    print_r($filho);
+    echo '</pre>';
+  
+    $filho->executarAcao();
+    echo '<br>';
+    $filho->x();
    
-
-
-
-
    
+  
 
 ?>
