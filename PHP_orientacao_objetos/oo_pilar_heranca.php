@@ -48,11 +48,6 @@
       echo 'freiando';
     }
 
-    
-
-
-
-
    }     //fim class veiculo-------------
 
 
