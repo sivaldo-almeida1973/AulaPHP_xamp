@@ -60,12 +60,9 @@
 
    }     //fim class veiculo-------------
 
-    
    class Caminhao extends Veiculo {
-    
-   }
 
-   
+   }
 
    $carro = new Carro('abc1234','branco');
    $moto = new Moto('xyz4567','vermelha');
@@ -78,9 +75,5 @@
   echo '<br>';
   $caminhao->trocarMarcha();
   
-
-   
-
-
 
 ?>
