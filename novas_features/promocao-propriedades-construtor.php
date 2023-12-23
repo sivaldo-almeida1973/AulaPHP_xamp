@@ -25,8 +25,8 @@
       }
 
 
-    //criando instancia da class, passando parametros
-    $produto = new Produto("Smartphone" , 3000);
+    // argumento nomeados
+    $produto = new Produto( valor:3000,name:"Smartphone" );
 
     //recupera o obj e acessa seus valores
     echo "Produto:". $produto->name;
